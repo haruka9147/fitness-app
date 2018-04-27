@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_size">18sp</dimen>
+    <dimen name="btn_size">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="font_ss">16sp</dimen>
+    <dimen name="font_s">18sp</dimen>
+    <dimen name="font_m">20sp</dimen>
+
+    <dimen name="btn_font">20sp</dimen>
+    <dimen name="btn_padding">10dp</dimen>
+    <dimen name="btn_margin">16dp</dimen>
+
+    <dimen name="unit_font">22sp</dimen>
+    <dimen name="margin40">40dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+</resources>

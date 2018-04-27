@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/note"
+        android:layout_marginBottom="@dimen/margin20"/>
+
+    <TextView
+        android:text="@string/what_height"
+        style="@style/question_text"
+        android:layout_marginBottom="@dimen/margin40"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progress2"
+        android:layout_marginBottom="@dimen/margin40"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin40"
+        android:gravity="center">
+
+        <NumberPicker
+            android:id="@+id/height_num1"
+            style="@style/picker7"></NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/height_num2"
+            style="@style/picker7"></NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/height_num3"
+            style="@style/picker7"></NumberPicker>
+
+        <TextView
+            style="@style/unit_text"
+            android:text="@string/cm"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_step"
+        style="@style/pink_btn"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:text="@string/next_step" />
+
+</LinearLayout>

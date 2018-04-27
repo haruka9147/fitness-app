@@ -1,0 +1,150 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            grid:columnCount="2"
+            grid:rowCount="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_m"
+                android:text="@string/weight_str"
+                android:fontFamily="@font/montserrat"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/weight_num"
+                    android:layout_width="100dp"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/kg"
+                    android:textSize="@dimen/font_m"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_m"
+                android:text="@string/fat_str"
+                android:fontFamily="@font/montserrat"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/bodyFat_num"
+                    android:layout_width="100dp"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/percent"
+                    android:textSize="@dimen/font_m"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/muscle_str"
+                android:fontFamily="@font/montserrat"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                grid:layout_columnWeight="1"
+                grid:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/muscle_num"
+                    android:layout_width="100dp"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/kg"
+                    android:textSize="@dimen/font_m"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_m"
+            android:text="@string/note"
+            android:fontFamily="@font/montserrat" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="@dimen/margin20"/>
+
+        <Button
+            android:id="@+id/save"
+            android:text="@string/save"
+            style="@style/pink_btn"/>
+
+    </LinearLayout>
+</ScrollView>

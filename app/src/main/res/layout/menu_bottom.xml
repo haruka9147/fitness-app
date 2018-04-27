@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    grid:columnCount="4">
+
+    <ImageButton
+        android:id="@+id/btn_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/run"
+        grid:layout_columnWeight="1"
+        android:background="@color/colorAccent"
+        android:minHeight="@dimen/btn_size"/>
+
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        grid:layout_columnWeight="1"
+        android:background="@color/colorAccent"
+        android:minHeight="@dimen/btn_size"/>
+
+    <ImageButton
+        android:id="@+id/btn_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/graph"
+        grid:layout_columnWeight="1"
+        android:background="@color/colorAccent"
+        android:minHeight="@dimen/btn_size"/>
+
+    <ImageButton
+        android:id="@+id/btn_cog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cog"
+        grid:layout_columnWeight="1"
+        android:background="@color/colorAccent"
+        android:minHeight="@dimen/btn_size"/>
+
+</android.support.v7.widget.GridLayout>

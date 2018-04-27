@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cake"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        style="@style/question_text"
+        android:text="@string/when_birthday"
+        android:layout_marginBottom="40dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progress3"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <NumberPicker
+            android:id="@+id/birth_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></NumberPicker>
+
+        <TextView
+            style="@style/unit_text"
+            android:text="@string/slash"/>
+
+        <NumberPicker
+            android:id="@+id/birth_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></NumberPicker>
+
+        <TextView
+            style="@style/unit_text"
+            android:text="@string/slash"/>
+
+        <NumberPicker
+            android:id="@+id/birth_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></NumberPicker>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        style="@style/pink_btn"
+        android:layout_marginRight="@dimen/btn_margin"
+        android:layout_marginLeft="@dimen/btn_margin"
+        android:text="@string/finish" />
+
+</LinearLayout>
